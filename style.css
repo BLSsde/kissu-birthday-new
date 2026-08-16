@@ -1,0 +1,306 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #ffd1dc;
+}
+
+/* BACKGROUND BASE */
+.romantic-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: linear-gradient(135deg, #ffd1dc, #ffe6eb);
+  overflow: hidden;
+}
+
+/* HEART STYLE */
+.romantic-bg span {
+  opacity: 0;
+  position: absolute;
+  display: block;
+  color: rgba(255, 0, 100, 0.6);
+  font-size: 20px;
+  animation: floatHearts linear infinite;
+  filter: blur(0.5px);
+  text-shadow: 0 0 10px rgba(255, 0, 100, 0.6);
+}
+
+
+/* ANIMATION */
+@keyframes floatHearts {
+  0% {
+    transform: translateY(0); /* start from bottom */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh); /* go up */
+    opacity: 0;
+  }
+}
+
+
+/* Rose effect */
+
+.rose-left {
+  left: 10px;
+}
+
+.rose-right {
+  right: 10px;
+} 
+.rose-left, .rose-right {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+  width: 80px;
+  height: auto;
+  transform: translateZ(0); /* normal */
+
+  /* 🔥 MAKE IT SHARP */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+
+  /* remove any blur */
+  filter: none;
+
+  /* smoother GPU rendering */
+  transform: translateZ(0);
+
+  animation: floatRose 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floatRose {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+/* BODY */
+/* body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
+  overflow: hidden;
+} */
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* PAGE */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
+
+  box-sizing: border-box; /* ✅ FIXES ALIGNMENT */
+  /* background: rgba(185, 128, 128, 0.7); */
+  backdrop-filter: blur(3px);
+}
+
+.page.active {
+  display: flex;
+}
+
+/* HEADING */
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #ff6b6b, #ff4b4b);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* MEMORY GALLERY (2 PER ROW, VERTICAL SCROLL ONLY) */
+.memory-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 15px;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* IMAGES FIX (NO ZOOM, NO BLUR) */
+.memory-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.memory-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* BIG IMAGE PAGE */
+.big-img {
+  width: 80%;
+  max-width: 280px;
+  border-radius: 20px;
+  margin-top: 10px;
+  animation: zoom 2s infinite alternate;
+}
+
+/* TEXT BELOW IMAGE */
+.img-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* LOVE LETTER */
+.letter {
+  width: 90%;
+  font-size: 16px;
+  line-height: 1.6;
+  
+}
+
+.letter::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.left-align {
+  text-align: left;
+  /* width: 100%; */
+  width: 90%;
+  /* padding: 25px; */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.letter-container {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  /* max-height: 250px;   🔥 controls height */
+  overflow-y: auto;
+  background: #eca9a9;
+  border-radius: 15px;
+  padding: 10px;
+}
+/* The reason why i love you */
+
+.reason-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-height: 70vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.reason-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.reason-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* 🔥 FIXED */
+  border-radius: 10px;
+}
+
+.reason-item p {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+/* VIDEO */
+video {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes zoom {
+  from {transform: scale(1);}
+  to {transform: scale(1.08);}
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .memory-gallery img {
+    height: auto;
+  }
+}

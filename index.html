@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <img class="rose-left" src="assets/images/white_roses_left.png">
+  <img class="rose-right" src="assets/images/white_roses_right.png">
+  
+  <div class="romantic-bg"></div>
+
+  <div class="container">
+
+    <!-- PAGE 1 -->
+    <section class="page active">
+      
+      <h1>Hey Beautiful Girl ❤️</h1>
+      <h2>Every moment with you is a blessing… </br>Today we celebrate YOU ❤️</h2>
+      <button onclick="nextPage()">Click to Open 🎁</button>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page">
+      <h1>Are you ready for a surprise? 👀</h1>
+      <button onclick="nextPage()">Yes ❤️</button>
+      <button onclick="nextPage()">Of Course 😍</button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page">
+      <h1>Do you know how much I love you? 💭</h1>
+      <button onclick="nextPage()">Click to know 🤩</button>
+    </section>
+
+    <!-- PAGE 4 (LOVE LETTER) -->
+    <section class="page">
+      <h1>For You Kissu 💌</h1>
+      <div class="letter-container">
+        <p class="left-align">My Love ❤️</p>
+        <p class="letter" id="letter"></p>
+      </div>
+      
+      <button onclick="nextPage()">Next</button>
+    </section>
+
+    <!-- PAGE 5 (The reason i love you the most) -->
+    <section class="page">
+      <h1>The reason why I love you ❤️ the most 😊</h1>
+
+      <div class="reason-gallery">
+
+        <div class="reason-item">
+          <img src="assets/images/photo1.jpg">
+          <p>Your smile is my favorite place ❤️</p>
+        </div>
+
+        <div class="reason-item">
+          <img src="assets/images/photo2.jpg">
+          <p>Your long hair are beautiful ❤️</p>
+        </div>
+
+        <div class="reason-item">
+          <img src="assets/images/photo3.jpg">
+          <p>Your loyalty is my belief ❤️</p>
+        </div>
+
+        <div class="reason-item">
+          <img src="assets/images/photo4.jpg">
+          <p>Your love and care mean everything ❤️</p>
+        </div>
+      </div>
+
+      <button onclick="nextPage()">Next</button>
+    </section>
+
+    <!-- PAGE 6 (MEMORIES - MOBILE SCROLL) -->
+    <div class="page" id="memoryPage">
+      <h1>Our Memories 💖</h1>
+      <div class="memory-gallery">
+        <img src="assets/images/photo1.jpg">
+        <img src="assets/images/photo2.jpg">
+        <img src="assets/images/photo3.jpg">
+        <img src="assets/images/photo1.jpg">
+        <img src="assets/images/photo2.jpg">
+        <img src="assets/images/photo3.jpg">
+        <img src="assets/images/photo1.jpg">
+        <img src="assets/images/photo2.jpg">
+        <img src="assets/images/photo3.jpg">
+      </div>
+
+      <button onclick="nextPage()">Next</button>
+    </div>
+
+
+    <!-- PAGE 7 (VIDEO) -->
+    <section class="page">
+      <h1>Watch This 🎥</h1>
+      <video controls>
+        <source src="assets/video/kissu_vid.mp4" type="video/mp4">
+      </video>
+      <button onclick="nextPage()">Final ❤️</button>
+    </section>
+
+    <!-- PAGE 8 -->
+    <section class="page">
+      <h1>I LOVE YOU FOREVER Kissu, Happy Birthday ❤️</h1>
+      <button onclick="restartJourney()">Start Again</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
