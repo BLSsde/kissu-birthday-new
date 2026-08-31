@@ -53,10 +53,9 @@ Please always stay with me. Don't ever leave me alone, not even for a moment. I 
 
 You are made for me, and I am made for you ❤️<br>
 
-<h3>𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝑴𝒚 𝑳𝒐𝒗𝒆 🎂❤️</h3> <br>
+𝑯𝒂𝒑𝒑𝒚 𝑩𝒊𝒓𝒕𝒉𝒅𝒂𝒚, 𝑴𝒚 𝑳𝒐𝒗𝒆 🎂❤️<br>
 I promise to love you more and more every single day.<br>
-
-<h3>𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝒚𝒐𝒖𝒓𝒔,</h3><br>
+𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝒚𝒐𝒖𝒓𝒔,<br>
 Your future husband 💖 <br>`;
 
 
