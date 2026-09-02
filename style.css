@@ -15,7 +15,7 @@ body {
   height: 100%;
   z-index: -1;
 
-  background: linear-gradient(135deg, #ffd1dc, #ffe6eb);
+  background: linear-gradient(135deg, #f8cbd6, #f3bac6);
   overflow: hidden;
 }
 
@@ -245,7 +245,7 @@ button:hover {
   text-align: left;
   width: 90%;
   margin: auto;
-  max-height: 58vh; 
+  max-height: 65vh; 
   overflow-y: auto;
   background: #eca9a9;
   border-radius: 20px;
@@ -337,7 +337,7 @@ video {
 
   .letter-container {
     width: 92%;
-    max-height: 55vh;
+    max-height: 60vh;
     overflow-y: auto;
   }
 
