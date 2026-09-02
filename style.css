@@ -120,6 +120,8 @@ body {
   box-sizing: border-box; /* ✅ FIXES ALIGNMENT */
   /* background: rgba(185, 128, 128, 0.7); */
   backdrop-filter: blur(3px);
+
+  overflow:hidden;
 }
 
 .btn{
